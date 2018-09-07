@@ -14,7 +14,7 @@ public class MyIntCol {
     }
 
     public void add(Integer integer) throws ClassCastException {
-        if(integer==null) throw new ClassCastException();
+        if(integer==null) throw new ClassCastException("Value must be not null");
         if (pos >= array.length) {
             resize();               // resize array
         }
@@ -26,7 +26,7 @@ public class MyIntCol {
         if(pos>0) {
             int index = getIndexByVal(integer);
 
-            if (index == -1) { throw new NoSuchElementException(); }
+            if (index == -1) { throw new NoSuchElementException("Element not found"); }
 
             Integer[] newArray = new Integer[array.length - 1];
             for (int i = 0, j = 0; i < array.length; i++) {
@@ -45,13 +45,13 @@ public class MyIntCol {
             return getValue(index);
         }
         else{
-            throw new NoSuchElementException();
+            throw new NoSuchElementException("Element not found");
         }
     }
 
     public Integer searchByValue(Integer value) throws NoSuchElementException{
         for (int i = 0; i <pos; i++) {
-            if(array[i].equals(value)){ return i; }
+            if(array[i].equals(value))
                 return value;
         }
         throw new NoSuchElementException();
@@ -128,8 +128,11 @@ public class MyIntCol {
             collection.add(i);
             System.out.println(collection);
         }
-        collection.add(null);
-
+        try {
+            collection.add(null);
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+        }
         System.out.println("collection.maxValue() = " + collection.maxValue());
         System.out.println("collection.minValue() = " + collection.minValue());
         System.out.println("collection.getAvg() = " + collection.getAvg());
