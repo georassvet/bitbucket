@@ -1,7 +1,6 @@
 package main.java.collection;
 
 import java.util.NoSuchElementException;
-import java.util.Random;
 
 public class MyIntCol {
     private Integer[] array;
@@ -14,7 +13,8 @@ public class MyIntCol {
         return pos==0;
     }
 
-    public void add(Integer integer) {
+    public void add(Integer integer) throws ClassCastException {
+        if(integer==null) throw new ClassCastException();
         if (pos >= array.length) {
             resize();               // resize array
         }
@@ -128,6 +128,7 @@ public class MyIntCol {
             collection.add(i);
             System.out.println(collection);
         }
+        collection.add(null);
 
         System.out.println("collection.maxValue() = " + collection.maxValue());
         System.out.println("collection.minValue() = " + collection.minValue());
