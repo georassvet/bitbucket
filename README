@@ -14,7 +14,7 @@
 который описывает задание, сам класс и содержит инструкции по запуску приложения.
 
  1. Create collection:
- MyIntCol collection =new MyIntCol();
+ IntegerCollection collection =new IntegerCollection();
  2. Add new element
         
     collection.add(10);
@@ -30,5 +30,3 @@
         int getAvg = collection.getAvg();
         int searchByIndex = collection.searchByIndex(2);
         int searchByValue = collection.searchByValue(20);
-
-
