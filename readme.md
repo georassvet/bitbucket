@@ -31,7 +31,9 @@
        </code>
    </li>
     <li>
-        <strong>void add(Integer value)</strong>>
+        <p>
+            <strong>void add(Integer value)</strong>
+        </p>
         <code>
             collection.add(10);
         </code>
@@ -43,7 +45,9 @@
         </dl>
     </li>
     <li>
+        <p>
         <strong>void remove(Integer integer)</strong>
+        </p>
         <code>
             collection.remove(10);
         </code>
@@ -55,8 +59,10 @@
         </dl>
     </li>
     <li>
+        <p>
         <strong>Integer searchByIndex(int index)</strong>
-        <code>
+        </p>
+            <code>
             Integer result = collection.searchByIndex(0);
         </code>
         <dl>
@@ -67,8 +73,10 @@
         </dl>
     </li>
     <li>
+        <p>
         <strong>Integer searchByValue(Integer value)</strong>
-        <code>
+        </p>
+            <code>
             collection.searchByValue(10)
         </code>
         <dl>
@@ -79,20 +87,26 @@
         </dl>
     </li>
     <li>
+        <p>
         <strong>int maxValue()</strong>
-        <code>
+        </p>
+            <code>
             int maxValue = collection.maxValue()
         </code>
     </li>
     <li>
-        <strong>int minValue()</strong>
-        <code>
+        <p>
+            <strong>int minValue()</strong>
+        </p>
+            <code>
             int minValue = collection.minValue()
         </code>
     </li>
     <li>
-        <strong>int getAvg()</strong>
-        <code>
+        <p>
+            <strong>int getAvg()</strong>
+        </p>
+            <code>
             int avg = collection.getAvg()
         </code>
     </li>
