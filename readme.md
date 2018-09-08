@@ -65,7 +65,6 @@
             <dt>Throws:</dt>
             <dd>NoSuchElementException - if the element not found in the collection</dd>
         </dl>
-
     </li>
     <li>
         <strong>Integer searchByValue(Integer value)</strong>
