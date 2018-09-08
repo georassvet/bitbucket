@@ -25,13 +25,13 @@
 ### Description
 <ol>
    <li>
-       Constructor<br>
+       <strong>Constructor</strong>
        <p>
            IntegerCollection collection = new IntegerCollection();
        </p>
    </li>
     <li>
-        void add(Integer value)
+        <strong>void add(Integer value)</strong>>
         <p>
             collection.add(10);
         </p>
@@ -43,7 +43,7 @@
         </dl>
     </li>
     <li>
-        void remove(Integer integer)
+        <strong>void remove(Integer integer)</strong>
         <p>
             collection.remove(10);
         </p>
@@ -54,32 +54,65 @@
             <dt>Parameters:</dt>
             <dd>value</dd>
             <dt>Throws:</dt>
-            <dd>NoSuchElementException - if the not found in the collection</dd>
+            <dd>NoSuchElementException - if the element not found in the collection</dd>
         </dl>
     </li>
     <li>
-        Удаление элементов(по значению)
+        Integer searchByIndex(int index)
         <p>
-            collection.maxValue()
+            Integer result = collection.searchByIndex(0);
         </p>
-    </li>
-    <li>
-        Удаление элементов(по значению)
-        <p>
-            collection.remove(10)
-        </p>
-    </li>
-    <li>
-        Удаление элементов(по значению)
-        <p>
-            collection.remove(10)
-        </p>
-    </li>
-    <li>
-        Удаление элементов(по значению)
-        <p>
-            collection.remove(10)
-        </p>
-    </li>
+        <dl>
+            <dt>Parameters:</dt>
+            <dd>index</dd>
+            <dt>Throws:</dt>
+            <dd>NoSuchElementException - if the element not found in the collection</dd>
+        </dl>
 
+    </li>
+    <li>
+        Integer searchByValue(Integer value)
+        <p>
+            collection.remove(10)
+        </p>
+        <dl>
+            <dt>Parameters:</dt>
+            <dd>value</dd>
+            <dt>Throws:</dt>
+            <dd>NoSuchElementException - if the element not found in the collection</dd>
+        </dl>
+    </li>
+    <li>
+        int maxValue()
+        <p>
+            int maxValue = collection.maxValue()
+        </p>
+    </li>
+    <li>
+        int minValue()
+        <p>
+            int minValue = collection.minValue()
+        </p>
+    </li>
+    <li>
+        int getAvg()
+        <p>
+            int avg = collection.getAvg()
+        </p>
+    </li>
 </ol>
+### Output
+<p>
+    [0]
+    [1, 1]
+    [3, 3, 2]
+    [6, 6, 5, 3]
+    [10, 10, 9, 7, 4]
+    Value must be not null
+    collection.maxValue() = 10
+    collection.minValue() = 4
+    collection.getAvg() = 8
+    collection.searchByIndex(2) = 9
+    Element not found
+    [10, 10, 9, 7, 4]
+</p>
