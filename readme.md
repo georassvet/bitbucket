@@ -26,15 +26,15 @@
 <ol>
    <li>
        <strong>Constructor</strong>
-       <p>
+       <code>
            IntegerCollection collection = new IntegerCollection();
-       </p>
+       </code>
    </li>
     <li>
         <strong>void add(Integer value)</strong>>
-        <p>
+        <code>
             collection.add(10);
-        </p>
+        </code>
         <dl>
             <dt>Parameters:</dt>
             <dd>value</dd>
@@ -44,9 +44,9 @@
     </li>
     <li>
         <strong>void remove(Integer integer)</strong>
-        <p>
+        <code>
             collection.remove(10);
-        </p>
+        </code>
         <dl>
             <dt>Parameters:</dt>
             <dd>integer</dd>
@@ -55,10 +55,10 @@
         </dl>
     </li>
     <li>
-        Integer searchByIndex(int index)
-        <p>
+        <strong>Integer searchByIndex(int index)</strong>
+        <code>
             Integer result = collection.searchByIndex(0);
-        </p>
+        </code>
         <dl>
             <dt>Parameters:</dt>
             <dd>index</dd>
@@ -68,9 +68,9 @@
     </li>
     <li>
         <strong>Integer searchByValue(Integer value)</strong>
-        <p>
+        <code>
             collection.searchByValue(10)
-        </p>
+        </code>
         <dl>
             <dt>Parameters:</dt>
             <dd>value</dd>
@@ -80,20 +80,20 @@
     </li>
     <li>
         <strong>int maxValue()</strong>
-        <p>
+        <code>
             int maxValue = collection.maxValue()
-        </p>
+        </code>
     </li>
     <li>
         <strong>int minValue()</strong>
-        <p>
+        <code>
             int minValue = collection.minValue()
-        </p>
+        </code>
     </li>
     <li>
         <strong>int getAvg()</strong>
-        <p>
+        <code>
             int avg = collection.getAvg()
-        </p>
+        </code>
     </li>
 </ol>
