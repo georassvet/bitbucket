@@ -47,12 +47,9 @@
         <p>
             collection.remove(10);
         </p>
-        <p>
-            collection.add(10);
-        </p>
         <dl>
             <dt>Parameters:</dt>
-            <dd>value</dd>
+            <dd>integer</dd>
             <dt>Throws:</dt>
             <dd>NoSuchElementException - if the element not found in the collection</dd>
         </dl>
@@ -71,9 +68,9 @@
 
     </li>
     <li>
-        Integer searchByValue(Integer value)
+        <strong>Integer searchByValue(Integer value)</strong>
         <p>
-            collection.remove(10)
+            collection.searchByValue(10)
         </p>
         <dl>
             <dt>Parameters:</dt>
@@ -83,36 +80,21 @@
         </dl>
     </li>
     <li>
-        int maxValue()
+        <strong>int maxValue()</strong>
         <p>
             int maxValue = collection.maxValue()
         </p>
     </li>
     <li>
-        int minValue()
+        <strong>int minValue()</strong>
         <p>
             int minValue = collection.minValue()
         </p>
     </li>
     <li>
-        int getAvg()
+        <strong>int getAvg()</strong>
         <p>
             int avg = collection.getAvg()
         </p>
     </li>
 </ol>
-### Output
-<p>
-    [0]
-    [1, 1]
-    [3, 3, 2]
-    [6, 6, 5, 3]
-    [10, 10, 9, 7, 4]
-    Value must be not null
-    collection.maxValue() = 10
-    collection.minValue() = 4
-    collection.getAvg() = 8
-    collection.searchByIndex(2) = 9
-    Element not found
-    [10, 10, 9, 7, 4]
-</p>
